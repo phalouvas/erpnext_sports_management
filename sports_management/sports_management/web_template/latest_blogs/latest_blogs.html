@@ -1,16 +1,15 @@
-{% set blog_category_doc = frappe.get_doc("Blog Category", blog_category) %}
-{% set posts = frappe.get_all("Blog Post", filters={"published": 1, "blog_category": blog_category}, fields=["title",
-"blogger", "blog_intro",
-"route", "meta_image", "featured", "published_on"], order_by="published_on desc", limit=limit) %}
-<a href="{{blog_category_doc.route}}">
-  <h2><span class="text-dark">{{ _(blog_category_doc.title) }}</span></h2>
+{# Fetch news/content Web Pages under the specified parent page #}
+{% set page_doc = frappe.get_doc("Web Page", blog_category) %}
+{% set posts = frappe.get_all("Web Page", filters={"published": 1, "route": ["like", page_doc.route + "/%"]}, fields=["name", "title", "main_section", "route", "meta_image", "modified"], order_by="modified desc", limit=limit) %}
+<a href="{{page_doc.route}}">
+  <h2><span class="text-dark">{{ _(page_doc.title) }}</span></h2>
 </a>
-<p class="section-description">{{ _(blog_category_doc.description) }}</p>
+<p class="section-description">{{ _(page_doc.main_section_md or page_doc.main_section or "") }}</p>
 <div class="blog-list-content">
-  <div data-doctype="Blog Post" data-txt="[notxt]">
+  <div data-doctype="Web Page" data-txt="[notxt]">
     <div id="blog-list" class="blog-list result row">
       {% for post in posts %}
-      <div class="blog-card col-sm-12 {{ 'col-md-8' if post.featured else 'col-md-4' }}">
+      <div class="blog-card col-sm-12 col-md-4">
         <div class="card h-100">
           <div class="card-img-top">
             {% if post.meta_image %}
@@ -23,22 +22,13 @@
           </div>
           <div class="card-body">
             <div>
-              <div class="text-muted small text-uppercase">
-                {%- if post.featured -%}
-                <span class="text-body">{{ _('Featured') }} &middot; </span>
-                {%- endif -%}
-              </div>
-              {%- if post.featured -%}
               <h5 class="mt-1"><span class="text-dark">{{ post.title }}</span></h5>
-              {%- else -%}
-              <h5 class="mt-1"><span class="text-dark">{{ post.title }}</span></h5>
-              {%- endif -%}
-              <p class="post-description text-muted">{{ post.blog_intro }}</p>
+              <p class="post-description text-muted">{{ (post.main_section | striptags)[:150] if post.main_section else "" }}...</p>
             </div>
             <div class="blog-card-footer">
               <div class="text-muted">
                 <div class="small">
-                  {{ frappe.format_date(post.published_on) }}
+                    {{ frappe.format_date(post.modified) }}
                 </div>
               </div>
             </div>

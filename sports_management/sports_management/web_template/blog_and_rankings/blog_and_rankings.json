@@ -7,8 +7,8 @@
   {
    "fieldname": "blog_category",
    "fieldtype": "Link",
-   "label": "Blog Category",
-   "options": "Blog Category",
+   "label": "News Page",
+   "options": "Web Page",
    "reqd": 1
   },
   {
