@@ -165,11 +165,11 @@
    "link_fieldname": "league"
   }
  ],
- "modified": "2024-02-29 10:12:20.872727",
+ "modified": "2026-01-29 10:00:23.120911",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "League",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -208,6 +208,7 @@
   }
  ],
  "route": "leagues",
+ "row_format": "Dynamic",
  "search_fields": "short_name,sports_type,age_group",
  "show_title_field_in_link": 1,
  "sort_field": "ordering",

@@ -98,11 +98,11 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2023-10-19 08:29:24.218286",
+ "modified": "2026-01-29 10:00:42.656895",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Position",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -151,6 +151,7 @@
  ],
  "quick_entry": 1,
  "route": "positions",
+ "row_format": "Dynamic",
  "search_fields": "role,sports_type",
  "show_title_field_in_link": 1,
  "sort_field": "modified",

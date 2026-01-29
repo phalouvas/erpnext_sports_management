@@ -256,11 +256,11 @@
    "link_fieldname": "match"
   }
  ],
- "modified": "2023-10-18 11:25:20.266139",
+ "modified": "2026-01-29 09:59:53.842939",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Match",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -309,6 +309,7 @@
   }
  ],
  "route": "matches",
+ "row_format": "Dynamic",
  "search_fields": "home_name,guest_name,tournament_name",
  "sort_field": "date",
  "sort_order": "ASC",
