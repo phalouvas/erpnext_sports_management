@@ -122,12 +122,11 @@
    "link_fieldname": "home"
   }
  ],
- "modified": "2023-10-18 10:48:26.689168",
+ "modified": "2026-01-29 10:00:32.134974",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Team",
- "name_case": "Title Case",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -179,6 +178,7 @@
   }
  ],
  "route": "teams",
+ "row_format": "Dynamic",
  "search_fields": "club,sports_type",
  "show_title_field_in_link": 1,
  "sort_field": "modified",

@@ -166,11 +166,11 @@
    "link_fieldname": "person"
   }
  ],
- "modified": "2025-02-19 08:29:08.205086",
+ "modified": "2026-01-29 09:58:03.895837",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Person",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -223,6 +223,7 @@
  ],
  "quick_entry": 1,
  "route": "persons",
+ "row_format": "Dynamic",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

@@ -93,11 +93,10 @@
    "link_fieldname": "club"
   }
  ],
- "modified": "2023-10-14 09:44:42.196965",
+ "modified": "2026-01-29 10:00:51.215316",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Club",
- "name_case": "Title Case",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -142,6 +141,7 @@
  ],
  "quick_entry": 1,
  "route": "clubs",
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

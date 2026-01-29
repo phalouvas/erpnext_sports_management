@@ -91,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2023-10-19 08:30:09.602238",
+ "modified": "2026-01-29 09:59:19.696493",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Age Group",
@@ -135,6 +135,7 @@
  ],
  "quick_entry": 1,
  "route": "age-groups",
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

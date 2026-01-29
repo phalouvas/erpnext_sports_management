@@ -275,11 +275,11 @@
    "link_fieldname": "tournament"
   }
  ],
- "modified": "2025-02-19 07:44:37.851734",
+ "modified": "2026-01-29 09:56:45.519505",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Tournament",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -318,6 +318,7 @@
   }
  ],
  "route": "tournaments",
+ "row_format": "Dynamic",
  "search_fields": "sports_type",
  "show_title_field_in_link": 1,
  "sort_field": "ordering",

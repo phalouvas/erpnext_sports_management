@@ -107,11 +107,11 @@
    "link_fieldname": "game_day"
   }
  ],
- "modified": "2023-10-13 08:35:31.928272",
+ "modified": "2026-01-29 09:59:41.159332",
  "modified_by": "Administrator",
  "module": "Sports Management",
  "name": "Game Day",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -150,6 +150,7 @@
   }
  ],
  "route": "game_days",
+ "row_format": "Dynamic",
  "search_fields": "tournament_name,start",
  "sort_field": "start",
  "sort_order": "ASC",
