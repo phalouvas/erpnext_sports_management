@@ -7,6 +7,14 @@ app_description = "Manage many sports"
 app_email = "info@kainotomo.com"
 app_license = "MIT"
 
+# Each item in the list will be shown as an app in the apps page
+add_to_apps_screen = [
+    {
+    	"name": "sports_management",
+		"title": "Sports Management",
+ 	}
+]
+
 # Includes in <head>
 # ------------------
 
